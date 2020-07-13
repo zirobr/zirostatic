@@ -187,7 +187,7 @@ body.rtl.et-db:not(.et-fb-no-rtl) #et-boc .et-l .et-fb-settings-option-inner-res
 .et-block-modal-wrapper .et-fb-settings-module-items-wrap {width: 100%;max-width: 100%;box-sizing: initial;padding-left: 30px;padding-right: 30px;margin-left: -30px;position: relative;padding-bottom: 1px;border-bottom: 1px solid #f1f5f9;margin-top: 10px;}
 body.rtl.et-db:not(.et-fb-no-rtl) #et-boc .et-l .et-block-modal-wrapper .et-fb-settings-module-items-wrap {margin-left: auto;margin-right: -30px;}
 .et-db #et-boc .et-l .et-fb-modal__global .et-block-modal-wrapper .et-fb-settings-module-items-wrap {padding-left: 50px;margin-left: -50px;}
-.et-db #et-boc .et-l .et-fb-modal__custom-defaults-mode .et-block-modal-wrapper .et-fb-settings-module-items-wrap {padding-bottom: 20px;}
+.et-db #et-boc .et-l .et-fb-modal__global-presets-mode .et-block-modal-wrapper .et-fb-settings-module-items-wrap {padding-bottom: 20px;}
 .et-block-modal-wrapper .et-fb-settings-module-items--waiting {position: absolute;display: block;top: 0;right: 0;bottom: 0;left: 0;z-index: 20;cursor: not-allowed;}
 .et-block-modal-wrapper .et-fb-settings-module-item {list-style: none;background: #f1f5f9;font-size: 13px;min-height: 40px;font-weight: 600;color: #32373c;margin-bottom: 10px;border-radius: 3px;padding: 10px 65px;position: relative;text-align: center;line-height: 1.5em;}
 body.rtl.et-db:not(.et-fb-no-rtl) #et-boc .et-l .et-block-modal-wrapper .et-fb-settings-module-item {padding-right: 65px;padding-left: 45px;}
@@ -471,9 +471,10 @@ body.rtl.et-db:not(.et-fb-no-rtl) #et-boc .et-l .et-block-modal-wrapper .et-fb-m
 .et-block-modal-wrapper #et-fb-app .et-fb-button--warning.et-fb-button--elevate, .et-block-modal-wrapper #et-fb-app .et-fb-buttonbutton--warning.et-fb-button--elevate {box-shadow: 0 5px 10px rgba(255,146,50,.15);}
 .et-block-modal-wrapper #et-fb-app .et-fb-button--globalitem, .et-block-modal-wrapper #et-fb-app .et-fb-button--globalitem:hover, .et-block-modal-wrapper #et-fb-app .et-fb-buttonbutton--globalitem, .et-block-modal-wrapper #et-fb-app .et-fb-buttonbutton--globalitem:hover {background: #97d000;color: #fff;}
 .et-block-modal-wrapper #et-fb-app .et-fb-button--globalitem.et-fb-button--elevate, .et-block-modal-wrapper #et-fb-app .et-fb-buttonbutton--globalitem.et-fb-button--elevate {box-shadow: 0 5px 10px rgba(151,208,0,.15);}
-.et-block-modal-wrapper #et-fb-app .et-fb-modal__global .et-fb-modal__header .et-fb-button {background: #72b900;}
-.et-block-modal-wrapper #et-fb-app .et-fb-modal .et-fb-modal__footer .et-fb-button-group, .et-block-modal-wrapper #et-fb-app .et-fb-modal__custom-defaults-mode .et-fb-modal__header .et-fb-button {background: #4c5866;}
+.et-block-modal-wrapper #et-fb-app .et-fb-modal__global .et-fb-modal__header__main .et-fb-button {background: #72b900;}
+.et-block-modal-wrapper #et-fb-app .et-fb-modal .et-fb-modal__footer .et-fb-button-group, .et-block-modal-wrapper #et-fb-app .et-fb-modal__global-presets-mode .et-fb-modal__header__main .et-fb-button {background: #4c5866;}
 .et-block-modal-wrapper #et-fb-app .et-fb-modal .et-fb-modal__header .et-fb-button-group .et-fb-button:last-child {margin-right: -12px;}
+.et-block-modal-wrapper #et-fb-app .et-fb-modal .et-fb-modal__header .et-fb-button-group .et-fb-settings-button--back-to-parent:last-child {margin-right: 0;}
 .et-block-modal-wrapper #et-fb-app .et-fb-button--large {max-height: 60px;padding: 22px;}
 .et-block-modal-wrapper #et-fb-app .et-fb-button--small {padding: 7px;font-size: 12px;line-height: .75;}
 .et-block-modal-wrapper #et-fb-app .et-fb-button--block, .et-block-modal-wrapper #et-fb-app .et-fb-buttonbutton--block {display: block;width: 100%;}
@@ -481,6 +482,8 @@ body.rtl.et-db:not(.et-fb-no-rtl) #et-boc .et-l .et-block-modal-wrapper .et-fb-m
 .et-block-modal-wrapper #et-fb-app .et-fb-button--round, .et-block-modal-wrapper #et-fb-app .et-fb-buttonbutton--round {border-radius: 100px;}
 .et-block-modal-wrapper #et-fb-app .et-fb-button--disabled, .et-block-modal-wrapper #et-fb-app .et-fb-button[disabled], .et-block-modal-wrapper #et-fb-app .et-fb-buttonbutton--disabled, .et-block-modal-wrapper #et-fb-app .et-fb-buttonbutton[disabled] {cursor: not-allowed;}
 .et-block-modal-wrapper #et-fb-app .et-fb-button--disabled .ink, .et-block-modal-wrapper #et-fb-app .et-fb-button[disabled] .ink, .et-block-modal-wrapper #et-fb-app .et-fb-buttonbutton--disabled .ink, .et-block-modal-wrapper #et-fb-app .et-fb-buttonbutton[disabled] .ink {display: none;}
+.et-block-modal-wrapper #et-fb-app .et-fb-button--within-dropdown, .et-block-modal-wrapper #et-fb-app .et-fb-buttonbutton--within-dropdown {text-transform: uppercase;padding: 7px;margin-top: 14px;font-size: 12px;font-weight: 700;line-height: 30px;}
+.et-block-modal-wrapper #et-fb-app .et-fb-button--within-dropdown:first-of-type, .et-block-modal-wrapper #et-fb-app .et-fb-buttonbutton--within-dropdown:first-of-type {margin-top: 0;}
 body.ie .et-block-modal-wrapper .et-fb-form {min-width: 330px;}
 body.gecko .et-block-modal-wrapper .et-fb-form {margin-bottom: 31px;}
 .et-block-modal-wrapper .et-fb-form__group {width: 100%;margin: 0 0 20px;box-sizing: border-box;position: relative;}

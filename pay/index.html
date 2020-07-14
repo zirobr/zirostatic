@@ -2,7 +2,7 @@
 <html lang="en-US"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">
 		document.documentElement.className = 'js';
 	</script><script>var et_site_url='https://static.ziro.com.br';var et_post_id='8';function et_core_page_resource_fallback(a,b){"undefined"===typeof b&&(b=a.sheet.cssRules&&0===a.sheet.cssRules.length);b&&(a.onerror=null,a.onload=null,a.href?a.href=et_site_url+"/?et_core_page_resource="+a.id+et_post_id:a.src&&(a.src=et_site_url+"/?et_core_page_resource="+a.id+et_post_id))}
-</script><title>Ziro Pay | Ziro</title><link rel="dns-prefetch" href="//fonts.googleapis.com"><link rel="dns-prefetch" href="//s.w.org"><link rel="stylesheet" id="wp-block-library-css" href="https://static.ziro.com.br/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all"><link rel="stylesheet" id="divi-style-css" href="https://static.ziro.com.br/wp-content/themes/Divi/style.css" type="text/css" media="all"><link rel="stylesheet" id="et-builder-googlefonts-cached-css" href="http://fonts.googleapis.com/css?family=Rubik%3A300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C700%2C700italic%2C900%2C900italic%7CWork+Sans%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900%7CPT+Sans%3Aregular%2Citalic%2C700%2C700italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CTitillium+Web%3A200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C900&subset=latin%2Clatin-ext&display=swap&ver=5.4.2" type="text/css" media="all"><link rel="stylesheet" id="dashicons-css" href="https://static.ziro.com.br/wp-includes/css/dashicons.min.css" type="text/css" media="all"><script type="text/javascript" src="https://static.ziro.com.br/wp-includes/js/jquery/jquery.js"></script><script type="text/javascript" src="https://static.ziro.com.br/wp-includes/js/jquery/jquery-migrate.min.js"></script><script type="text/javascript" src="https://static.ziro.com.br/wp-content/themes/Divi/core/admin/js/es6-promise.auto.min.js"></script><script type="text/javascript">
+</script><title>Ziro Pay | Ziro</title><link rel="dns-prefetch" href="//fonts.googleapis.com"><link rel="dns-prefetch" href="//s.w.org"><link rel="stylesheet" id="wp-block-library-css" href="https://static.ziro.com.br/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all"><link rel="stylesheet" id="divi-style-css" href="https://static.ziro.com.br/wp-content/themes/Divi/style.css" type="text/css" media="all"><link rel="stylesheet" id="et-builder-googlefonts-cached-css" href="http://fonts.googleapis.com/css?family=Rubik%3A300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C700%2C700italic%2C900%2C900italic%7CWork+Sans%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900&subset=latin%2Clatin-ext&display=swap&ver=5.4.2" type="text/css" media="all"><link rel="stylesheet" id="dashicons-css" href="https://static.ziro.com.br/wp-includes/css/dashicons.min.css" type="text/css" media="all"><script type="text/javascript" src="https://static.ziro.com.br/wp-includes/js/jquery/jquery.js"></script><script type="text/javascript" src="https://static.ziro.com.br/wp-includes/js/jquery/jquery-migrate.min.js"></script><script type="text/javascript" src="https://static.ziro.com.br/wp-content/themes/Divi/core/admin/js/es6-promise.auto.min.js"></script><script type="text/javascript">
 /* <![CDATA[ */
 var et_core_api_spam_recaptcha = {"site_key":"","page_action":{"action":"pay"}};
 /* ]]> */
@@ -459,7 +459,83 @@ body.custom-background { background-color: #000000; }
 						<input type="hidden" id="_wpnonce-et-pb-contact-form-submitted-0" name="_wpnonce-et-pb-contact-form-submitted-0" value="dee96744f1"><input type="hidden" name="_wp_http_referer" value="/pay/"></form>
 				</div> 
 			</div> 
-			
+			<div class="et_pb_module et_pb_code et_pb_code_0">
+				
+				
+				<div class="et_pb_code_inner"><div style="display:flex; justify-content:center; width:100%">
+        <style>
+            #myForm {background:#FFFFFF; display:flex; flex-direction: column; width:100%; align-self: center; padding:40px}
+            #msgSucesso {font-family: 'Work Sans', sans-serif; font-size:'1.6rem'; margin-top:0;color:#fbfdfb}
+            #inp_username {font-family: 'Work Sans', sans-serif; font-size:'1.5rem'; color:#878998; background-color: #F2F0FB; outline: none; border:none; padding:15px}
+            #inp_whatsapp {font-family: 'Work Sans', sans-serif; font-size:'1.5rem'; color:#878998; background-color: #F2F0FB; outline: none; border:none; padding:15px}
+            #inp_mensagem {font-family: 'Work Sans', sans-serif; font-size:'1.5rem'; color:#878998; background-color: #F2F0FB; outline: none; border:none; padding:15px}
+            #btnEnviar {font-family: 'Work Sans', sans-serif; font-size:'1.6rem'; background-color: #03031B; color:#F2F0FB; border:none; outline: none; border-radius: 200px; width: 20%; height: 35px;}
+            #btnEnviar:active {transform: scale(0.95, 0.95); -webkit-transform:  scale(0.95, 0.95)}
+            .inputInfo{width:45%}
+            #msgSucesso{display:none; max-width:500px; margin:0 auto;text-align: center; align-self: end; color:#070B26}
+            #btnEnviar{align-self: flex-end; min-width: 100px; max-width: 150px;}
+            #btnEnviar{font-size: 13px;color: #ffffff;border-width: 10px;border-color: #000000;border-radius: 30px;font-weight: undefined;font-weight: 700;text-transform: uppercase;letter-spacing: 2px;background-color: #000000;background-image: initial;}
+            @media screen and (max-width: 850px){.inputInfo{width:43%}}
+            @media screen and (max-width: 600px){.inputInfo{width:37%}}
+            @media screen and (max-width: 400px){button{border-radius: 15px;}}
+        </style><form class="form" id="myForm" method="post">
+                <div id="inputDiv" style="display:flex; justify-content: space-between; margin-bottom: 30px;">
+                    <input class="inputInfo" type="text" nome="inp_username" id="inp_username" placeholder="NOME" required><input class="inputInfo" type="text" nome="inp_whatsapp" id="inp_whatsapp" placeholder="WHATSAPP" required></div>
+                <textarea style="margin-bottom: 30px" id="inp_mensagem" name="inp_mensagem" rows="10" placeholder="MENSAGEM" cols="50" required></textarea><button id="btnEnviar" type="submit">Enviar</button>
+                <p id="msgSucesso" type="submit">Obrigado! Entraremos em contato em breve.</p> 
+        </form>
+        <script defer>
+            const form = document.getElementById('myForm')
+            const nameInput = document.getElementById('inp_username')
+
+            form.addEventListener('submit', async function(e){
+                e.preventDefault()
+                let valores = document.querySelector('form.form').elements;
+                const msgSucesso = document.getElementById("msgSucesso")
+                const btnEnviar = document.getElementById("btnEnviar")
+                const formData = new FormData(this)
+                const userInput = valores['inp_username'].value
+                const emailInput = valores['inp_whatsapp'].value
+                const mensagemInput = valores['inp_mensagem'].value
+                const option = {
+                    method:'POST',
+                    headers:{
+                            Origin:'https://ziro.app',
+                            'Content-Type':'application/json',
+                            Authorization:process.env.SHEET_TOKEN
+                        },
+                        body: JSON.stringify({
+                        "apiResource": "values",
+                        "apiMethod": "batchUpdate",
+                        "spreadsheetId": process.env.SHEET_ID,
+                        "resource": {
+                            "data": [
+                                {
+                                    "range": "Página1!A1",
+                                    "values": [
+                                        [
+                                        userInput,
+                                        emailInput,
+                                        mensagemInput
+                                        ]
+                                    ]
+                                }
+                            ]
+                        },
+                        "valueInputOption": "user_entered"
+                    })
+                }
+                try {
+                    const request = await fetch(process.env.SHEET_URL,option)
+                    console.log(request)
+                    msgSucesso.style.display = 'flex'
+                    btnEnviar.style.display = 'none'
+                } catch (error) {
+                    console.log(error)
+                }
+          })
+        </script></div></div>
+			</div> 
 			</div> 
 				
 				
@@ -572,7 +648,7 @@ body.custom-background { background-color: #000000; }
   gtag('js', new Date());
 
   gtag('config', 'UA-164247072-1');
-</script><script type="text/javascript">
+</script><link rel="stylesheet" id="et-builder-googlefonts-css" href="http://fonts.googleapis.com/css?family=Rubik:300,300italic,regular,italic,500,500italic,700,700italic,900,900italic%7CWork+Sans:100,200,300,regular,500,600,700,800,900%7CPT+Sans:regular,italic,700,700italic%7CPoppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic%7CTitillium+Web:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,900&subset=latin,latin-ext&display=swap" type="text/css" media="all"><script type="text/javascript">
 /* <![CDATA[ */
 var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
 var et_shortcodes_strings = {"previous":"Previous","next":"Next"};

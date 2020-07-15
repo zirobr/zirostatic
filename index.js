@@ -51,18 +51,18 @@ function submitForm() {
                 msgSucesso.style.marginTop = '20px' 
                 msgSucesso.style.display = 'flex'
             }else{
-                await fetch(process.env.SHEET_URL,option)
-                // if(JSON.stringify(request).data){
+                const request = await fetch(process.env.SHEET_URL,option)
+                if(request.status === 200){
                     msgSucesso.innerHTML = 'Obrigado! Entraremos em contato em breve.' 
                     msgSucesso.style.display = 'flex'
                     msgSucesso.style.color = 'green'
                     btnEnviar.style.display = 'none'
-                // }else{
-                //     msgSucesso.style.display = 'flex'
-                //     msgSucesso.style.color = 'red'
-                //     msgSucesso.style.marginTop = '20px' 
-                //     msgSucesso.innerHTML = 'Ocorreu um erro, tente novamente.' 
-                // }
+                }else{
+                    msgSucesso.style.display = 'flex'
+                    msgSucesso.style.color = 'red'
+                    msgSucesso.style.marginTop = '20px' 
+                    msgSucesso.innerHTML = 'Ocorreu um erro, tente novamente.' 
+                }
             }
         } catch (error) {
             console.log(error)

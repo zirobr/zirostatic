@@ -30,7 +30,7 @@ function submitForm() {
                 "resource": {
                     "data": [
                         {
-                            "range": "Página1!A1",
+                            "range": "WebPageForm!A1",
                             "values": [
                                 [
                                 userInput,

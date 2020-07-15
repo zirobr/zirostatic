@@ -1,12 +1,19 @@
+document.addEventListener('keydown', function(event) {
+    if(event.keyCode != 46 && event.keyCode != 8 && event.keyCode != 9 && event.keyCode != 16 && event.keyCode != 18 && event.keyCode != 20 && event.keyCode != 144 && event.keyCode != 17){
+        let i = document.getElementById("inp_whatsapp").value.length
+        if(i === 2)
+            document.getElementById("inp_whatsapp").value = document.getElementById("inp_whatsapp").value + " ";
+        else if (i === 8)
+            document.getElementById("inp_whatsapp").value = document.getElementById("inp_whatsapp").value + "-";
+    }
+  });
 function submitForm() {
     const form = document.getElementById('myForm')
-    const nameInput = document.getElementById('inp_username')
     form.addEventListener('submit', async function(e){
         e.preventDefault()
         let valores = document.querySelector('form.form').elements;
         const msgSucesso = document.getElementById("msgSucesso")
         const btnEnviar = document.getElementById("btnEnviar")
-        const formData = new FormData(this)
         const userInput = valores['inp_username'].value
         const emailInput = valores['inp_whatsapp'].value
         const mensagemInput = valores['inp_mensagem'].value
@@ -38,10 +45,25 @@ function submitForm() {
             })
         }
         try {
-            const request = await fetch(process.env.SHEET_URL,option)
-            console.log(request)
-            msgSucesso.style.display = 'flex'
-            btnEnviar.style.display = 'none'
+            if(!/^(\d{2}) [0-9]\d{4}-[0-9]\d{3}$/gm.test(document.getElementById("inp_whatsapp").value)){
+                msgSucesso.innerHTML = 'Digite corretamente o WHATSAPP (11 99999-9999).'
+                msgSucesso.style.color = 'red' 
+                msgSucesso.style.marginTop = '20px' 
+                msgSucesso.style.display = 'flex'
+            }else{
+                await fetch(process.env.SHEET_URL,option)
+                // if(JSON.stringify(request).data){
+                    msgSucesso.innerHTML = 'Obrigado! Entraremos em contato em breve.' 
+                    msgSucesso.style.display = 'flex'
+                    msgSucesso.style.color = 'green'
+                    btnEnviar.style.display = 'none'
+                // }else{
+                //     msgSucesso.style.display = 'flex'
+                //     msgSucesso.style.color = 'red'
+                //     msgSucesso.style.marginTop = '20px' 
+                //     msgSucesso.innerHTML = 'Ocorreu um erro, tente novamente.' 
+                // }
+            }
         } catch (error) {
             console.log(error)
         }

@@ -474,14 +474,14 @@ body.custom-background { background-color: #000000; }
                         #btnEnviar:active {transform: scale(0.95, 0.95); -webkit-transform:  scale(0.95, 0.95)}
                         #inputDiv{margin-bottom:20px}
                         .inputInfo{width:48%;margin-bottom: 20px;}
-                        #msgSucesso{display:none; max-width:500px; margin:0 auto;text-align: center; align-self: end; color:#070B26}
+                        #msgSucesso{display:none; margin-top:20px; max-width:300px; margin:0 auto;text-align: center; align-self: end; color:#070B26}
                         #btnEnviar{align-self: flex-end; min-width: 100px; max-width: 150px;}
                         #btnEnviar{font-size: 13px;color: #ffffff;border-width: 10px;border-color: #000000;border-radius: 30px;font-weight: undefined;font-weight: 700;text-transform: uppercase;letter-spacing: 2px;background-color: #000000;background-image: initial;}
                         @media screen and (max-width: 750px){#inputDiv{display:flex;flex-direction: column;height: 100%;}.inputInfo{width:100%;margin-bottom: 0px;}#inp_username{margin-bottom: 20px;}}
                     </style><form class="form" id="myForm" method="post">
             <div id='inputDiv' style='display:flex; justify-content: space-between;'>
                 <input class='inputInfo' type="text" nome="inp_username" id="inp_username" placeholder="NOME" required>
-                <input class='inputInfo' type="text" nome="inp_whatsapp" id="inp_whatsapp" placeholder="WHATSAPP" required>
+                <input class='inputInfo' type="text" nome="inp_whatsapp" id="inp_whatsapp" placeholder="WHATSAPP" maxlength="13" required>
             </div>
             <textarea style='margin-bottom: 20px' id="inp_mensagem" name="inp_mensagem" rows="10" placeholder="MENSAGEM" cols="50" required></textarea>
             <button id='btnEnviar' type='submit'>Enviar</button>
